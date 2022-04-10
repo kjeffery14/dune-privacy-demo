@@ -1,7 +1,0 @@
-TENANT_URL=https://harbinger.verify.ibm.com
-CLIENT_ID=ed6e45c2-05d2-492c-a3dd-1f3813a4ef87
-CLIENT_SECRET=Zeiqv2WEsy
-REDIRECT_URI=http://localhost:3000/auth/callback
-SCOPE=openid marketing/email.default profile profilemgmt/email.read
-USER_REGISTRATION_LINK=
-THEME_ID=
