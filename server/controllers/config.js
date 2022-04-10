@@ -1,5 +1,5 @@
 // load contents of .env into process.env
-require('dotenv').config();
+// require('dotenv').config();
 
 exports.Config = {
     tenantUrl    : process.env.TENANT_URL,
