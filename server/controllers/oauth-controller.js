@@ -70,8 +70,9 @@ class OAuthController {
 
         req.session.destroy();
         const proxyHost = req.headers["x-forwarded-host"];
+        const protocol = proxyHost ? 'https' : req.protocol;
         const host = proxyHost ? proxyHost : req.headers.host;
-        res.redirect(config.tenantUrl + '/idaas/mtfim/sps/idaas/logout?redirectUrl=' + encodeURIComponent(req.protocol + '://' + host) + "&themeId=" + config.themeId);
+        res.redirect(config.tenantUrl + '/idaas/mtfim/sps/idaas/logout?redirectUrl=' + encodeURIComponent(protocol + '://' + host) + "&themeId=" + config.themeId);
     }
 
     static isLoggedIn(req) {
